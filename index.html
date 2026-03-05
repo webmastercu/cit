@@ -39,6 +39,40 @@ body{
     margin:auto;
     padding:60px 20px;
 }
+section-light{
+background:#F4F8FC;
+}
+
+.divider{
+height:1px;
+background:#E3E8EF;
+margin:40px 0;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+margin-top:30px;
+}
+
+.card{
+background:white;
+border-radius:8px;
+padding:28px;
+box-shadow:0 4px 14px rgba(0,0,0,0.05);
+border-top:4px solid #00B2FF;
+}
+
+.card h3{
+margin-top:0;
+font-size:20px;
+color:#00204D;
+}
+
+.container p{
+margin-bottom:14px;
+}
 
 /* ---------------------- */
 /* HEADER */
@@ -237,7 +271,7 @@ Together, we built more than programs — we built futures.
 
 </section>
 
-<section class="container">
+<section class="container section-light">
 
 <h2>Our Mission Continues</h2>
 
@@ -249,11 +283,9 @@ While our Schaffhausen campus is closing, our core commitment remains unchanged 
 As part of the Constructor Group education ecosystem, we invite you to continue your academic journey through our other institutions:
 </p>
 
-</section>
+<div class="cards">
 
-<section class="container">
-
-<div class="institution">
+<div class="card">
 
 <h3>Constructor University (Bremen, Germany)</h3>
 
@@ -275,7 +307,7 @@ Explore our Computer science programs
 
 </div>
 
-<div class="institution">
+<div class="card">
 
 <h3>Nexford University (Online)</h3>
 
@@ -297,7 +329,7 @@ Discover Nexford
 
 </div>
 
-<div class="institution">
+<div class="card">
 
 <h3>Constructor Nexademy (Switzerland & Germany)</h3>
 
@@ -316,6 +348,8 @@ A specialized academy for coding, data science, and AI-powered professional trai
 Learn with Nexademy
 </a>
 </p>
+
+</div>
 
 </div>
 
